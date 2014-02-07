@@ -39,5 +39,5 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['jshint', 'start-server', 'nagios:test-command', 'mochaTest']);
   grunt.registerTask('default', ['test']);
   grunt.loadTasks('tasks');
-  grunt.loadTasks('test');
+  grunt.loadTasks('test/tasks');
 };
