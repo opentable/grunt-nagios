@@ -26,6 +26,7 @@ module.exports = function(grunt) {
           user: 'someone',
           password: 'somwhere',
           server: '127.0.0.1:8888',
+          grouptype: 'host',
           group: 'ln-01',
           command: 29
         }
