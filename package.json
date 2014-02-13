@@ -1,6 +1,6 @@
 {
   "name": "grunt-nagios",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Nagios grunt module to interact with cmd.cgi interface",
   "main": "Gruntfile.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ryantomlinson/grunt-nagios.git"
+    "url": "git://github.com/opentable/grunt-nagios.git"
   },
   "keywords": [
     "grunt",
@@ -17,7 +17,7 @@
   "author": "Ryan Tomlinson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryantomlinson/grunt-nagios/issues"
+    "url": "https://github.com/opentable/grunt-nagios/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
