@@ -12,7 +12,8 @@
   },
   "keywords": [
     "grunt",
-    "nagios"
+    "nagios",
+    "gruntplugin"
   ],
   "author": "Ryan Tomlinson",
   "license": "MIT",
