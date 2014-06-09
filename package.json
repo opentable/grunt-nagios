@@ -1,6 +1,6 @@
 {
   "name": "grunt-nagios",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Nagios grunt module to interact with cmd.cgi interface",
   "main": "Gruntfile.js",
   "scripts": {

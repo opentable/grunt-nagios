@@ -20,7 +20,8 @@ nagios: {
     password: "nagiospassword", // nagios user account password
     group: 'webgroup', // nagios group
     grouptype: 'hostgroup', // Options are: hostgroup or host - default is host
-    command: 66 // check your nagios setup for available commands
+    command: 66, // check your nagios setup for available commands
+    nohttps: false // force request to use http (default is https)
  }
 }
 ```
