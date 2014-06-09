@@ -20,6 +20,7 @@ module.exports = function(grunt){
           user: options.user,
           pass: options.password
       },
+      rejectUnauthorized: false,
       form: form
     }, function(error, response, body) {
       if (error) {
