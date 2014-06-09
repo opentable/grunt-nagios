@@ -2,7 +2,7 @@ var request = require('request');
 
 module.exports = function(grunt){
   var makeRequest = function(options, done) {
-    var requestUrl = 'http://' + options.user + ':' + options.password + '@' + options.server + '/nagios/cgi-bin/cmd.cgi';
+    var requestUrl = (options.nohttps ? 'http' : 'https') + '://' + options.server + '/nagios/cgi-bin/cmd.cgi';
     grunt.verbose.writeln('Nagios url: ' + requestUrl);
 
     var form = {
@@ -16,6 +16,10 @@ module.exports = function(grunt){
     request({
       uri: requestUrl,
       method: "POST",
+      auth: {
+          user: options.user,
+          pass: options.password
+      },
       form: form
     }, function(error, response, body) {
       if (error) {
