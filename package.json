@@ -1,6 +1,6 @@
 {
   "name": "grunt-nagios",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Nagios grunt module to interact with cmd.cgi interface",
   "main": "Gruntfile.js",
   "scripts": {
@@ -20,16 +20,16 @@
     "url": "https://github.com/opentable/grunt-nagios/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-cli": "~0.1.9",
-    "grunt-contrib-jshint": "~0.6.2",
-    "grunt-mocha-test": "~0.9.0",
-    "should": "~3.1.2"
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-test": "^0.11.0",
+    "should": "^4.0.3"
   },
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "^0.4.5"
   },
   "dependencies": {
-    "request": "~2.33.0"
+    "request": "^2.36.0"
   }
 }

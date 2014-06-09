@@ -28,7 +28,8 @@ module.exports = function(grunt) {
           server: '127.0.0.1:8888',
           grouptype: 'host',
           group: 'ln-01',
-          command: 29
+          command: 29,
+          nohttps: true
         }
       }
     }
