@@ -6,12 +6,18 @@ module.exports = function(grunt){
     grunt.verbose.writeln('Nagios url: ' + requestUrl);
 
     var form = {
-      cmd_typ: options.command, 
+      cmd_typ: options.command,
       cmd_mod: 2,
       btnSubmit: 'Commit'
     };
 
-    form[options.grouptype] = options.group;
+    if(options.grouptype){
+      form[options.grouptype] = options.group;
+    }
+
+    if(options.host){
+      form.host = options.host;
+    }
 
     request({
       uri: requestUrl,
@@ -29,11 +35,11 @@ module.exports = function(grunt){
 
       grunt.log.ok(response.statusCode);
       grunt.verbose.writeln(body);
-      
+
       done();
     });
   };
-  
+
   grunt.registerMultiTask('nagios', 'nagios interaction', function(){
     var done = this.async();
     var options = this.options({});
@@ -43,4 +49,3 @@ module.exports = function(grunt){
     makeRequest(options, done);
   });
 };
-
