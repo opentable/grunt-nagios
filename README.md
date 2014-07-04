@@ -14,15 +14,25 @@ Once installed you need to configure your grunt file with the options:
 
 ```js
 nagios: {
- options: {
-    server: "127.0.0.1", // nagios server IP
-    user: "nagiosuser", // nagios user account username
-    password: "nagiospassword", // nagios user account password
-    group: 'webgroup', // nagios group
-    grouptype: 'hostgroup', // Options are: hostgroup or host - default is host
-    command: 66, // check your nagios setup for available commands
+  options: {
+    server: "127.0.0.1",
+    user: "nagiosuser",
+    password: "nagiospassword",
     nohttps: false // force request to use http (default is https)
- }
+  },
+  'mygroup-off': {
+    options: {
+       group: 'mygroup', // optional: target a group
+       grouptype: 'hostgroup', // Options are: hostgroup or servicegroup
+       command: 66 // check your nagios setup for available commands
+    }
+  },
+  'myhost-off':{
+    options: {
+      host: 'my.server.com', // target a specific host
+      command: 55 // check your nagios setup for available commands
+    }
+  }
 }
 ```
 
